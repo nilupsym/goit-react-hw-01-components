@@ -4,9 +4,7 @@ export default createUseStyles({
     profile: {
   display: 'block',
   width: 270,
-  marginLeft: 'auto',
-  marginRight: 'auto',
-  marginTop: 10,
+  margin: '10px auto 30px auto',
   borderRadius: 5,
   boxShadow: '0 0 5px #999999',
   transition: 'transform 500ms ease',
