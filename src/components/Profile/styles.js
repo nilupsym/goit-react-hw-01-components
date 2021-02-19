@@ -7,9 +7,10 @@ export default createUseStyles({
   margin: '10px auto 30px auto',
   borderRadius: 5,
   boxShadow: '0 0 5px #999999',
-  transition: 'transform 500ms ease',
+  opacity: '0.8',
+  transition: 'opacity 500ms ease',
         '&:hover': {
-            transform: 'scale(1.01)',
+            opacity: '1',
             cursor: 'pointer',
   },
     },
