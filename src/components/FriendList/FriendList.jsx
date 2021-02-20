@@ -2,14 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import s from './FriendList.module.css';
 
-const onlineColor = { backgroundColor: 'rgb(245, 4, 4)' };
-const offlineColor = { backgroundColor: 'rgb(9, 241, 40)' };
+const offlineColor = { backgroundColor: 'rgb(245, 4, 4)' };
+const onlineColor = { backgroundColor: 'rgb(9, 241, 40)' };
 
 const FriendList = ({ friends }) => (
     <ul className={s.friendList}>
         {friends.map(friend => (
             <li key={friend.id} className={s.item}>
-                <span className={s.status} style={friend.isOnline ? (onlineColor) : (offlineColor)}>
+                <span
+                    className={s.status}
+                    style={friend.isOnline ? (onlineColor) : (offlineColor)}>
                     {friend.isOnline}
                 </span>
                 <img
